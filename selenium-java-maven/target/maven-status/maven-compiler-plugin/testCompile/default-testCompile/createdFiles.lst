@@ -1,0 +1,4 @@
+com\techwithalex\pages\WebFormPage.class
+com\techwithalex\base\TestBase.class
+com\techwithalex\tests\SeleniumTests.class
+com\techwithalex\pages\TargetPage.class

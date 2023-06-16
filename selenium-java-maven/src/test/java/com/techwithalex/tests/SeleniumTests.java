@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class SeleniumTests extends TestBase {
 
     @Test
-    public void submitFormTest(){
+    public void submitFormTest() {
 
         String text = goToHomePage()
                 .writeTextToTextArea("sample text")

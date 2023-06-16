@@ -9,17 +9,17 @@ public class WebFormPage {
     By textArea = By.name("my-textarea");
     By submitButton = By.tagName("button");
 
-    public WebFormPage(WebDriver driver){
-        this.driver=driver;
+    public WebFormPage(WebDriver driver) {
+        this.driver = driver;
     }
 
-    public WebFormPage writeTextToTextArea(String text){
+    public WebFormPage writeTextToTextArea(String text) {
         driver.findElement(textArea).sendKeys(text);
 
         return this;
     }
 
-    public TargetPage submitForm(){
+    public TargetPage submitForm() {
         driver.findElement(submitButton).click();
 
         return new TargetPage(driver);

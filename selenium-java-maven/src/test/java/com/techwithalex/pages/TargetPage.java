@@ -8,11 +8,11 @@ public class TargetPage {
 
     By message = By.id("message");
 
-    public TargetPage(WebDriver driver){
-        this.driver=driver;
+    public TargetPage(WebDriver driver) {
+        this.driver = driver;
     }
 
-    public String getMessage(){
+    public String getMessage() {
         return driver.findElement(message).getText();
     }
 }

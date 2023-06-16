@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:4.9.1'
+    implementation 'org.junit.jupiter:junit-jupiter:5.10.0-M1'
+    implementation 'io.cucumber:cucumber-java:7.12.1'
+    implementation 'io.cucumber:cucumber-junit:7.12.1'
+    implementation 'org.junit.vintage:junit-vintage-engine:5.10.0-M1'
+}
+
+group = 'com.techwithalex'
+version = '1.0-0'
+description = 'selenium-webdriver-java-cucumber'
+java.sourceCompatibility = JavaVersion.VERSION_20
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+}

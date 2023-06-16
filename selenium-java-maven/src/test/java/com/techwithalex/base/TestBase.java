@@ -12,18 +12,18 @@ public class TestBase {
     WebDriver driver;
 
     @BeforeEach
-    public void beforeTest(){
+    public void beforeTest() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @AfterEach
-    public void afterTest(){
+    public void afterTest() {
         driver.quit();
     }
 
-    protected WebFormPage goToHomePage(){
+    protected WebFormPage goToHomePage() {
         driver.get("https://www.selenium.dev/selenium/web/web-form.html");
 
         return new WebFormPage(driver);

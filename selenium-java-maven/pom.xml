@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>com.techwithalex</groupId>
     <artifactId>selenium-webdriver-java</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0-0</version>
 
     <properties>
         <maven.compiler.source>20</maven.compiler.source>
@@ -27,6 +27,7 @@
     </build>
 
     <dependencies>
+        <!-- https://central.sonatype.com/artifact/org.seleniumhq.selenium/selenium-java/4.9.1 -->
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -34,6 +35,7 @@
             <version>4.9.1</version>
         </dependency>
 
+        <!-- https://central.sonatype.com/artifact/org.junit.jupiter/junit-jupiter-api/5.9.3 -->
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -42,6 +44,7 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- https://central.sonatype.com/artifact/org.slf4j/slf4j-api/2.0.7 -->
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
         <dependency>
             <groupId>org.slf4j</groupId>
